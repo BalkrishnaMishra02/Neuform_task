@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaPlus } from "react-icons/fa6";
 import { FiHome } from "react-icons/fi";
+import Img1 from "/src/assets/Img1.jpg"
+import Img2 from "/src/assets/Img2.jpg"
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { CiMail } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
@@ -27,7 +29,7 @@ const App = () => {
       <header className="bg-white shadow p-4 flex justify-between items-center h-20">
         <div className="flex items-center gap-4">
           <img
-            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxIM38rWoDoUj4PQmDisqmg97ZDJnyPi4fK8mrK6NXdquySAhD"
+            src={Img2}
             alt="Logo"
             className="h-20 m-5"
           />
@@ -49,7 +51,7 @@ const App = () => {
         <div className="flex">
           <div className="flex items-center gap-4 ">
             <div className="rounded-full overflow-hidden w-12 h-12 shadow-xl object-cover border-2">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&s" alt="" />
+              <img src={Img1} alt="" />
             </div>
             <div className=" font-bold ">
               <h3>Wade Warren</h3>
@@ -113,35 +115,6 @@ const App = () => {
           </div>
         </div>
 
-        {/* Main Feed */}
-        {/* <div className="col-span-6 bg-white shadow rounded p-4">
-          {[1, 2].map((post, i) => (
-            <div key={i} className="mb-6">
-              <div className="flex items-center gap-4">
-                <div className="h-10 w-10 bg-gray-300 rounded-full"></div>
-                <div>
-                  <div className="font-bold">Eleanor Pena</div>
-                  <div className="text-gray-500 text-sm">Connected</div>
-                </div>
-                <button className="ml-auto bg-purple-500 text-white px-4 py-1 rounded-3xl">
-                  Connect
-                </button>
-              </div>
-              <div className="mt-4">
-                <div className="h-48 bg-gray-300 rounded"></div>
-                <p className="mt-2 text-gray-700 text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Faucibus amet porttitor
-                  pulvinar enim. Tellus tortor erat tristique augue amet faucibus
-                  vestibulum malesuada.
-                </p>
-                <div className="flex gap-4 mt-2">
-                  <button>👍</button>
-                  <button>💬</button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
 
         {/* Main Feed */}
         <div className="col-span-6 bg-white shadow rounded p-4">
